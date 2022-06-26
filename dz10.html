@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function optimizeString() {
+          let arr = [];
+          while(true){
+            let word = prompt("Введите слово");
+            if (word === null || word ==='') break;
+            arr.push(word);
+            };//end while  
+          let result = arr.map(word => { 
+          const newWord = word[0].toUpperCase() + word.slice(1);
+          return newWord; }).sort(function(a, b){return b.length - a.length});
+           console.log(`${result}`);
+          };
+        optimizeString();    
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
